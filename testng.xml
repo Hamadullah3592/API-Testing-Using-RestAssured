@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/HamadullahKamangar/IdeaProjects/RestAssured API Testing/src/test/java/apiTesting/GetApi.java"><classes><class name="apiTesting.GetMethod"><methods><include name="getcall"/></methods></class></classes></test></suite>
