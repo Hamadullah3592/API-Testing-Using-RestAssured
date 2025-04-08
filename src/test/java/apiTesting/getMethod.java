@@ -12,6 +12,8 @@ public class getMethod {
         RestAssured.baseURI = "https://reqres.in/";
         Response response = given().when().get("api/users/2");
         response.prettyPrint();
+        System.out.println(response.statusCode());
+        System.out.println(response.statusLine());
     }
 
 }

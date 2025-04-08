@@ -9,16 +9,14 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class postMethod {
+public class deleteMethod {
     @Test
-    public void createUsers(){
+    public void DeleteUser(){
         RestAssured.baseURI = "https://reqres.in/";
-        Map<String,String> bodyData = new HashMap<String , String>(); //
-        bodyData.put("name", "hamad");
-        bodyData.put("job", "testing");
-        Response response = given().when().body(bodyData).post("api/users");
+        Map<String,String> bodyData = new HashMap<String , String>();
+        Response response = given().when().delete("api/users/2"); // replace the id with lets one
         response.prettyPrint();
         System.out.println(response.statusCode());
         System.out.println(response.statusLine());
-}
+    }
 }
